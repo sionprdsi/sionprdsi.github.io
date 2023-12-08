@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href=styles.css>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Admin | Institut Teknologi Del</title>
+    <!-- IKON DEL -->
+    <link rel="icon" href="../images/Institut Teknologi Del.png" type="image/png">
+    <style>
+        .custom-select {
+            max-width: 250px;
+            width: 200%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-pzjw8f+ua/C8d2q+RoWT7dIcPH5vd3PbDWf5zDrMabn3UqRcj5qEXO8U6wzjZISb" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img style="margin-left: 18%;" src="../images/Institut Teknologi Del.png" height="80%" width="55%"
+                    alt="">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li > 
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li >
+                    <a href="pengumumanadmin.html">
+                        <i class="fas fa-bell"></i> Pengumuman
+                    </a>
+                </li>
+                <li>
+                    <a href="ProgramPendidikan.html">
+                        <i class="fas fa-graduation-cap"></i>
+                        Program Pendidikan
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="Lembaga.html">
+                        <i class="fas fa-building"></i>
+                        Lembaga
+                    </a>
+                </li>
+                <li>
+                    <a href="Fasilitas.html">
+                        <i class="fas fa-hospital"></i>
+                        Fasilitas
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="announcement-header ml-4">
+                        <h1>Lembaga</h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <form class="form-inline my-2 my-lg-0 mr-4">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="wrapper bg-light">
+                <div class="input-group mb-5">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="jurusan">Pilih Halaman Lembaga</label>
+                    </div>
+                    <select class="custom-select" id="jurusan">
+                        <option value="" selected disabled>Halaman Utama Lembaga</option>
+                        <option value="1">Halaman Lembaga</option>
+                        <option value="2">Kategori</option>
+                        <option value="3">Berita Lembaga</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button mb-5">
+                <button type="button" class="btn btn-primary"><span class="fa fa-plus"></span> Tambah Data</button>
+                <button type="button" class="btn btn-success"><span class="fa fa-edit"></span> Edit Data</button>
+                <button type="button" class="btn btn-danger"><span class="fa fa-trash"></span> Hapus Data</button>
+            </div>
+            
+            <div class="jadwal">
+                <table class="table table-bordered table-hover table-condensed">
+                    <thead class="thead-dark">
+                        <tr>
+                            <td colspan="11 bg-light ">
+                                <h1 style="font-size: 200%;">Berita 1</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th title="Field #1" nowrap width="2%">No</th>
+                            <th title="Field #2" nowrap width="20%">Gambar</th>
+                            <th title="Field #3" nowrap width="19%">Judul</th>
+                            <th title="Field #4">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img style="height: 100%; width: 100%;" src=".././images/mitra kerja 9.jpeg"
+                                    class="img-fluid"></td>
+                            <td>Mitra Kerja Sama Institut Teknologi Del</td>
+                            <td> Institut Teknologi Del (IT Del) menjalin kerja sama dengan beberapa mitra, seperti
+                                Konsorsium EASTEM, Uppsala University di Swedia, Ho Chi Minh City University of
+                                Technology and Education, Chiang Mai University, Ministry of Education and Training
+                                (MOET) di Vietnam, Universitas Udayana, Pusat Riset Ekologi dan Etnobiologi BRIN, serta
+                                PT Telkomsel.
+
+                                IT Del juga terlibat dalam berbagai bidang kerja sama, termasuk pendirian Innovation Hub
+                                atau Toba Digital Valley (TDV), pelaksanaan magang untuk mahasiswa IT Del, pertukaran
+                                pengetahuan, dan rekrutmen lulusan IT Del untuk bekerja di PT Telkomsel.
+
+                                Selain itu, IT Del pernah menjalin kerja sama dengan institusi lain, seperti Universitas
+                                Pelita Harapan, Dekan Fakultas Sains, Punguan Parsadaan Guru Ni Laingan Siregar
+                                Se-Indonesia, Universitas Esa Unggul, Hutahaean, dan Pemerintah Kabupaten.</td>
+                        </tr>
+
+                    </tbody>
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <td colspan="11 bg-light">
+                                <h1 style="font-size: 200%;">Berita 2</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th title="Field #1" nowrap width="2%">No</th>
+                            <th title="Field #2" nowrap width="20%">Gambar</th>
+                            <th title="Field #3" nowrap width="19%">Judul</th>
+                            <th title="Field #4">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><img style="height: 100%; width: 100%;" src=".././images/lpm.jpg" class="img-fluid">
+                        </td>
+                        <td>Lembaga Penelitian dan Pengabdian Masyarakat (LPPM)</td>
+                        <td> Lembaga Penelitian dan Pengabdian Kepada Masyarat Institut Teknologi Del (LPPM IT Del)
+                            pada 20 September 2019 menyelenggarakan “Pelatihan Penulisan Proposal Pengabdian kepada
+                            Masyarakat” untuk Dosen dan Teaching Assistant di lingkungan IT Del. Seluruh Dosen dan
+                            Teaching Assistant IT Del diundang untuk mengikuti pelatihan ini di GD512 kampus IT Del
+                            .
+
+                            Pelatihan ini dibuka oleh Wakil Rektor II Dr. Arnaldo Marulitua Sinaga, S.T, M.InfoTech,
+                            pelatihan ini diadakan karena banyak dosen baru dan belum banyak yang memahami tentang
+                            penulisan proposal untuk ”Harapannya 90% peserta pelatihan bisa menulis proposal dengan
+                            baik dan mendapatkan pendanaan untuk melakukan program pengabdian kepada masyarakat di
+                            tingkat nasional” ungkapnya.</td>
+                    </tr>
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <td colspan="11 bg-light">
+                                <h1 style="font-size: 200%;">Berita 3</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th title="Field #1" nowrap width="2%">No</th>
+                            <th title="Field #2" nowrap width="20%">Gambar</th>
+                            <th title="Field #3" nowrap width="19%">Judul</th>
+                            <th title="Field #4">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><img style="height: 100%; width: 100%;" src=".././images/uptt.png" class="img-fluid">
+                        </td>
+                        <td>STRUKTUR ORGANISASI UPT PP-ESTEM DI INSTITUT TEKNOLOGI DEL</td>
+                        <td> A. VISI
+                            Sebagai pusat pengembangan pembelajaran yang unggul dan inovatif, terutama dalam bidang
+                            Sains, Teknologi, Enginering, dan Matematika (STEM) yang berkualitas, efisien, efektif,
+                            produktif, dan akuntabel.
+
+                            B. MISI
+                            1. Melakukan kegiatan penelitian terkait metode, media, dan sumber belajar yang inovatif dan
+                            berkualitas berbasis konsep STEM serta pengembangan dan penerapannya dalam kegiatan belajar
+                            mengajar di IT Del.
+                            2. Mengembangkan pembelajaran dengan pendekatan yang berpusat pada mahasiswa (SCL-Student
+                            Center Learning) dan menerapkannya dalam kegiatan belajar mengajar di IT Del.
+                            3. Mengembangkan pembelajaran elektronik (e-learning) dan menerapkannya dalam kegiatan
+                            belajar mengajar di IT Del.
+                            4. Melakukan kegiatan pelatihan kepada sivitas IT Del dan pihak eksternal terkait dengan
+                            pembelajaran inovatif berbasis STEM dan SCL.
+                            5. Menjalin kerjasama dengan pihak eksternal seperti pemerintah, institusi pendidikan lain,
+                            dan industri dalam pengembangan dan penerapan pembelajaran inovatif.
+
+                            C. TUJUAN
+                            1. Meningkatkan kemampuan sivitas dalam melaksanakan pembelajaran inovatif berbasis STEM,
+                            SCL, dan elektronik.
+                            2. Meningkatkan kemampuan lulusan dengan tingkat serapan kerja yang tinggi yang dibutuhkan
+                            oleh industri dan masyarakat.
+                            3. Meningkatkan kemampuan tenaga pengajar di lembaga pendidikan mitra dalam melaksanakan
+                            pembelajaran inovatif berbasis STEM, SCL, dan elektronik.</td>
+                    </tr>
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <td colspan="11 bg-light">
+                                <h1 style="font-size: 200%;">Berita 4</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th title="Field #1" nowrap width="2%">No</th>
+                            <th title="Field #2" nowrap width="20%">Gambar</th>
+                            <th title="Field #3" nowrap width="19%">Judul</th>
+                            <th title="Field #4">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><img style="height: 100%; width: 100%;" src=".././images/ukmrobotic.jpeg" class="img-fluid">
+                        </td>
+                        <td>KOMUNITAS - Lewat UKM RDC, Mahasiswa IT Del Asah Minat di Bidang Radio</td>
+                        <td> DELFMRADIO.co.id- Sempat vakum, Unit Kegiatan Mahasiswa (UKM) bernama Radio Club (RDC) di
+                            kampus Institut Teknologi Del kini diaktifkan kembali. Lewat RDC, para mahasiswa bakal
+                            mengasah minatnya di bidang radio. Aktifnya RDC kini ditandai dengan pelantikan pengurus
+                            baru periodisasi 2022-2023 di auditorium IT Del, Rabu, 23 November 2022. Adapun pelantikan
+                            dilakukan langsung oleh Rektor IT Del Arnaldo Marulitua Sinaga didampingi oleh Kepala Humas
+                            IT Del Istas Manalu, Koordinator Bidang Kemahasiswaan IT Del Adrianto, Direktur Del FM Radio
+                            Humasak Simanjuntak dan Stasion Manager Riki M. Eikal. “Dengan ini, pengurus baru UKM RDC IT
+                            Del 2022-2023, resmi dilantik,” ujarnya sambil mengetuk microphone tiga kali, tanda resmi
+                            dilantik.</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href=styles.css>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Institut Teknologi Del</title>
+    <!-- IKON DEL -->
+    <link rel="icon" href="../images/Institut Teknologi Del.png" type="image/png">
+
+    <style>
+        /* Gaya khusus untuk halaman ini */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .announcement-header {
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            margin-left: 110px;
+            /* Mengatasi margin body */
+        }
+
+        .announcement-header i {
+            margin-right: 10px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .button-container button {
+            margin-right: 10px;
+        }
+    </style>
+    <style>
+        .custom-select {
+            max-width: 260px;
+            width: 200%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img style="margin-left: 18%;" src="../images/Institut Teknologi Del.png" height="80%" width="55%"
+                    alt="">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="pengumumanadmin.html">
+                        <i class="fas fa-bell"></i> Pengumuman
+                    </a>
+                </li>
+                <li>
+                    <a href="ProgramPendidikan.html">
+                        <i class="fas fa-graduation-cap"></i>
+                        Program Pendidikan
+                    </a>
+                </li>
+                <li>
+                    <a href="Lembaga.html">
+                        <i class="fas fa-building"></i>
+                        Lembaga
+                    </a>
+                </li>
+                <li>
+                    <a href="Fasilitas.html">
+                        <i class="fas fa-hospital"></i>
+                        Fasilitas
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="announcement-header ml-4">
+                        <h1>Pengumuman</h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <form class="form-inline my-2 my-lg-0 mr-4">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="wrapper bg-light">
+                <div class="input-group mb-5">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="jurusan">Pilih Halaman Pengumuman</label>
+                    </div>
+                    <select class="custom-select" id="jurusan">
+                        <option value="" selected disabled>Halaman Utama Pengumuman</option>
+                        <option value="1">Halaman Lembaga</option>
+                        <option value="2">Kategori</option>
+                        <option value="3">Berita Lembaga</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button mb-5">
+                <button type="button" class="btn btn-primary"><span class="fa fa-plus"></span> Tambah Data</button>
+                <button type="button" class="btn btn-success"><span class="fa fa-edit"></span> Edit Data</button>
+                <button type="button" class="btn btn-danger"><span class="fa fa-trash"></span> Hapus Data</button>
+            </div>
+
+            <div class="jadwal">
+                <table class="table table-bordered table-hover table-condensed">
+                    <thead class="thead-dark">
+                        <tr>
+                            <td colspan="11 bg-light ">
+                                <h1 style="font-size: 200%;">BERITA</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th title="Field #1" nowrap width="2%">No</th>
+                            <th title="Field #2" nowrap width="20%">Gambar</th>
+                            <th title="Field #3" nowrap width="19%">Judul</th>
+                            <th title="Field #4">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img style="height: 100%; width: 100%;"
+                                    src="../assets/assets/images/berita terkini2.jpg" class="img-fluid"></td>
+                            <td>Kuliah Umum oleh Konsulat Amerika Serikat terkait
+                                Suku Asli Amerika Serikat</td>
+                            <td> Pada hari Jumat, 24 November 2023 Institut Teknologi Del menerima
+                                kunjungan dari Ibu Kristy
+                                Mordhorts (Konsulat Amerika Serikat di Medan). Kunjungan ini disambut baik oleh IT Del
+                                yang
+                                diwakili oleh […]</td>
+                        </tr>
+
+                    </tbody>
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <td colspan="11 bg-light">
+                                <h1 style="font-size: 200%;">UPCOMING EVENT</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th title="Field #1" nowrap width="2%">No</th>
+                            <th title="Field #2" nowrap width="20%">Gambar</th>
+                            <th title="Field #3" nowrap width="19%">Judul</th>
+                            <th title="Field #4">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><img style="height: 100%; width: 100%;" src=".././images/event.png" class="img-fluid">
+                            <img style="height: 100%; width: 100%;" src=".././assets/assets/images/event1.JPG" class="img-fluid">
+                            <img style="height: 100%; width: 100%;" src=".././assets/assets/images/event2.JPG" class="img-fluid">
+                        </td>
+                        <td>UPCOMING EVENT</td>
+                        <td> Akan Datang: Jangan lewatkan event dan kegiatan menarik berikutnya! Kami sangat bersemangat
+                            untuk menyambut Anda dalam acara spesial kami. Gabunglah dengan kami untuk pengalaman yang
+                            tak terlupakan, diisi dengan kegembiraan, pembelajaran, dan kesempatan untuk bertemu
+                            orang-orang hebat. Tetap terhubung untuk informasi lebih lanjut dan detail acara..</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img style="height: 100%; width: 100%;" src=".././images/gambar 5.jpeg" class="img-fluid">
+                        </td>
+                        <td>Keunggulan</td>
+                        <td> Tingkat kedalaman dan keluasan materi pembelajaran untuk setiap program pendidikan yang
+                            diselenggarakan di IT Del, dirumuskan dengan mengacu pada deskripsi capaian pembelajaran
+                            lulusan dari Kerangka Kualifikasi Nasional indonesia (KKNI). Kurikulum pendidikan IT Del
+                            disusun mengacu pada empat paradigma: Pendidikan [1] berbasis pada capaian dan produk yang
+                            secara eksplisit dan terukur menetapkan capaian yang harus diraih lulusan setelah menempuh
+                            pendidikan di IT Del;</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img style="height: 100%; width: 100%;" src=".././images/lpm.jpg" class="img-fluid">
+                        </td>
+                        <td>Beasiswa</td>
+                        <td>Beasiswa Prestasi Beasiswa Prestasi adalah jenis beasiswa yang diperoleh dari nilai IPK
+                            akhir semester per tahun ajaran yang diakumulasikan mendapat voucher Beasiswa SPP
+                            berdasarkan ketentuan akademik dari IPK perihal dana beasiswa prestasi. Beasiswa ini berlaku
+                            bagi seluruh mahasiswa IT Del setiap semester.</td>
+                    </tr>
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <td colspan="11 bg-light">
+                                <h1 style="font-size: 200%;">BERITA TERKINI</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th title="Field #1" nowrap width="2%">No</th>
+                            <th title="Field #2" nowrap width="20%">Gambar</th>
+                            <th title="Field #3" nowrap width="19%">Judul</th>
+                            <th title="Field #4">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><img style="height: 100%; width: 100%;" src=".././images/berita1.png" class="img-fluid">
+                        </td>
+                        <td>Informasi Terkini terkait Institut Teknologi Del
+
+                        </td>
+                        <td> IT Del Menjadi Tuan Rumah 29th IEEE ICT Conference.</td>
+                    </tr>
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <td colspan="11 bg-light">
+                                <h1 style="font-size: 200%;">PENERIMAAN MAHASISWA BARU</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th title="Field #1" nowrap width="2%">No</th>
+                            <th title="Field #2" nowrap width="20%">Gambar</th>
+                            <th title="Field #3" nowrap width="19%">Judul</th>
+                            <th title="Field #4">Deskripsi</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><img style="height: 100%; width: 100%;" src=".././images/spmb 1.png" class="img-fluid">
+                        </td>
+                        <td>Informasi PMB Jalur Ujian Saring Masuk 2 (USM 2) 2023 & Jadwal Pelaksanaan Kegiatan</td>
+                        <td>
+                            Ujian Saring Masuk (USM) adalah salah satu jalur penerimaan mahasiswa baru […]
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS dan Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
